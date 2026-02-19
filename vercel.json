@@ -2,11 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "socialvibe/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "socialvibe/dist"
-      }
+      "src": "package.json",
+      "use": "@vercel/static-build"
     },
     {
       "src": "socialvibe-backend/server.js",
@@ -20,9 +17,10 @@
     },
     {
       "src": "/(.*)",
-      "dest": "socialvibe/$1"
+      "dest": "dist/$1"
     }
   ],
+  "outputDirectory": "dist",
   "env": {
     "NODE_ENV": "production"
   }

@@ -1,12 +1,18 @@
 {
   "name": "travel",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "SocialVibe - Social Activity Platform",
+  "main": "socialvibe-backend/server.js",
   "scripts": {
+    "build": "cd socialvibe && npm install && npm run build && cd .. && mkdir -p dist && cp -r socialvibe/dist/* dist/",
+    "start": "node socialvibe-backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "social",
+    "activity",
+    "platform"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs"
