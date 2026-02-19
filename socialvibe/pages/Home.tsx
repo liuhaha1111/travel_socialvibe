@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/activities');
+        const response = await fetch('/api/activities');
         if (response.ok) {
           const fetchedActivities = await response.json();
           

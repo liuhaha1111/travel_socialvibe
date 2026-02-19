@@ -66,7 +66,7 @@ export const Create: React.FC = () => {
 
     try {
       // 调用后端API保存活动
-      const response = await fetch('http://localhost:3001/api/activities', {
+      const response = await fetch('/api/activities', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

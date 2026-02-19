@@ -18,7 +18,7 @@ export const Profile: React.FC = () => {
   // 删除活动
   const handleDeleteActivity = async (activityId: string) => {
     try {
-      const response = await fetch(`http://localhost:3001/api/activities/${activityId}`, {
+      const response = await fetch(`/api/activities/${activityId}`, {
         method: 'DELETE'
       });
 
